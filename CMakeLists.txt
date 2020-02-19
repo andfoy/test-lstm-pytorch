@@ -5,7 +5,7 @@ project(rnn_test)
 
 INCLUDE_DIRECTORIES(
   "/home/andfoy/git/Quansight/libtorch/include"
-  "/home/andfoy/git/Quansight/libtorch/include/torch/csrc/api/include/torch/"
+  "/home/andfoy/git/Quansight/libtorch/include/torch/csrc/api/include/"
 )
 
 LINK_DIRECTORIES(
