@@ -4,8 +4,8 @@ project(rnn_test)
 # find_package(Torch REQUIRED)
 
 INCLUDE_DIRECTORIES(
-  "/home/andfoy/git/Quansight/libtorch/torch/include"
-  "/home/andfoy/git/Quansight/libtorch/torch/include/torch/csrc/api/include/"
+  "/home/andfoy/git/Quansight/libtorch/include"
+  "/home/andfoy/git/Quansight/libtorch/include/torch/csrc/api/include/torch/"
 )
 
 LINK_DIRECTORIES(
