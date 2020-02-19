@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
 project(rnn_test)
 
-find_package(Torch REQUIRED)
+# find_package(Torch REQUIRED)
 
 INCLUDE_DIRECTORIES(
-  "/home/andfoy/git/Quansight/pytorch/torch/include"
-  "/home/andfoy/git/Quansight/pytorch/torch/include/torch/csrc/api/include/"
+  "/home/andfoy/git/Quansight/libtorch/torch/include"
+  "/home/andfoy/git/Quansight/libtorch/torch/include/torch/csrc/api/include/"
 )
 
 LINK_DIRECTORIES(
-  "/home/andfoy/git/Quansight/pytorch/torch/lib"
+  "/home/andfoy/git/Quansight/libtorch/lib"
 )
 
 add_executable(rnn_test rnn_test.cpp)
