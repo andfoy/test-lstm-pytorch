@@ -5,6 +5,7 @@ project(rnn_test)
 
 INCLUDE_DIRECTORIES(
   "/home/andfoy/git/Quansight/pytorch/torch/include"
+  "/home/andfoy/git/Quansight/pytorch/torch/include/torch/csrc/api/include/torch"
 )
 
 add_executable(rnn_test rnn_test.cpp)
