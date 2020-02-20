@@ -1,3 +1,0 @@
-/home/andfoy/git/Quansight/test-lstm-pytorch/build/CMakeFiles/rebuild_cache.dir
-/home/andfoy/git/Quansight/test-lstm-pytorch/build/CMakeFiles/edit_cache.dir
-/home/andfoy/git/Quansight/test-lstm-pytorch/build/CMakeFiles/rnn_test.dir
