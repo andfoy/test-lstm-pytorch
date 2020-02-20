@@ -19,6 +19,7 @@ struct LSTMTest : torch::nn::Module {
 };
 
 int main() {
+    std::cout << "start?";
     auto net = std::make_shared<LSTMTest>();
     torch::Tensor input = torch::rand({1, 10, 256});
     torch::Tensor output = net -> forward(input);
