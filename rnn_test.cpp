@@ -5,7 +5,7 @@ struct LSTMTest : torch::nn::Module
     LSTMTest()
     {
         torch::nn::LSTMOptions opts(256, 128);
-        opts.bidirectional = true;
+        opts.bidirectional(true);
         rnn = register_module("rnn", torch::nn::LSTM(opts));
         // fc1 = register_module("fc1", torch::nn::Linear(784, 64));
         // fc2 = register_module("fc2", torch::nn::Linear(64, 32));
@@ -28,7 +28,7 @@ int main()
     at::set_num_threads(1);
     std::cout << "start?\n";
     auto net = std::make_shared<LSTMTest>();
-    std::cout << net->children;
+    std::cout << net->children();
     // TxBxE
     torch::Tensor input = torch::rand({10, 1, 256});
     torch::Tensor output = net->forward(input);
