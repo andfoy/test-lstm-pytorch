@@ -7,6 +7,7 @@ struct LSTMTest : torch::nn::Module
         torch::nn::LSTMOptions opts(256, 128);
         opts.bidirectional(true);
         opts.cat_layer_fwd_bwd_states(false);
+        opts.layers(3);
         rnn = register_module("rnn", torch::nn::LSTM(opts));
         // fc1 = register_module("fc1", torch::nn::Linear(784, 64));
         // fc2 = register_module("fc2", torch::nn::Linear(64, 32));
