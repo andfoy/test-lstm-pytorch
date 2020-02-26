@@ -32,6 +32,7 @@ int main()
     auto net = std::make_shared<LSTMTest>();
     // std::cout << net->children();
     net->pretty_print(std::cout);
+    std::cout << "\n";
     // TxBxE
     torch::Tensor input = torch::rand({10, 1, 256});
     torch::Tensor output = net->forward(input);
