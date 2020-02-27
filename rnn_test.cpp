@@ -28,13 +28,18 @@ struct LSTMTest : torch::nn::Module
 int main()
 {
     at::set_num_threads(1);
+    torch::DeviceType device_type;
+    device_type = torch::kCUDA;
+
     std::cout << "start?\n";
     auto net = std::make_shared<LSTMTest>();
+    net -> to(device_type);
     // std::cout << net->children();
     net->pretty_print(std::cout);
     std::cout << "\n";
     // TxBxE
     torch::Tensor input = torch::rand({10, 1, 256});
+    input = input.to(device_type);
     torch::Tensor output = net->forward(input);
     std::cout << output.sizes();
     return 0;
