@@ -18,6 +18,7 @@ struct LSTMTest : torch::nn::Module
     {
         torch::Tensor state = {};
         torch::nn::RNNOutput output;
+        std::cout << "Calling forward\n";
         output = rnn->forward(x, state);
         return output.output;
     }
