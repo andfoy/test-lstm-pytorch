@@ -28,7 +28,7 @@ struct LSTMTest : torch::nn::Module
 
 int main()
 {
-    at::set_num_threads(1);
+    // at::set_num_threads(1);
     torch::DeviceType device_type;
     device_type = torch::kCUDA;
 
