@@ -35,6 +35,7 @@ int main()
     std::cout << "start?\n";
     auto net = std::make_shared<LSTMTest>();
     net -> to(device_type);
+    std::cout << "Sending model to GPU\n";
     // std::cout << net->children();
     net->pretty_print(std::cout);
     std::cout << "\n";
